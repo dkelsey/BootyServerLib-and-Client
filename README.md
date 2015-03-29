@@ -17,6 +17,6 @@ g++ -Wall -o Client Client.cpp -L./ -lutils
 
 ```bash
  ./Client 
-Who Loves Boody?...
+Who Loves Booty?...
  You do!
 ```
