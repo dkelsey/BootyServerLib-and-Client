@@ -6,11 +6,19 @@ Example of a shared Library in OS X.  `BootyServerLib` exports: `std::string who
 ```bash
 g++ -dynamiclib -o libutils.dylib utils.cpp
 ```
+or
+```
+make libBootyServer.dylib
+```
 
 # HowTo create the Client
 
 ```bash
 g++ -Wall -o Client Client.cpp -L./ -lutils
+```
+or
+```
+make Client
 ```
 
 # a run of the Client
@@ -19,4 +27,8 @@ g++ -Wall -o Client Client.cpp -L./ -lutils
  ./Client 
 Who Loves Booty?...
  You do!
+```
+or 
+```
+make run
 ```
