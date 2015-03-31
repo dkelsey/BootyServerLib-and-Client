@@ -1,12 +1,12 @@
 /*
- * utils.h
+ * BootyServer.h
  *
  *  Created on: Mar 28, 2015
  *      Author: dkelsey
  */
 
-#ifndef UTILS_H_
-#define UTILS_H_
+#ifndef BOOTYSERVER_H_
+#define BOOTYSERVER_H_
 
 #include<iostream>
 #include<string>
@@ -17,4 +17,4 @@ std::string to_binary(int x);
 std::string who_loves_booty();
 
 
-#endif /* UTILS_H_ */
+#endif /* BOOTYSERVER_H_ */

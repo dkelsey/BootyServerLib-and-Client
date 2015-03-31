@@ -1,17 +1,17 @@
 CPPFLAGS=-Wall
 LDFLAGS=-dynamiclib
-LDLIBS=-L./ -lutils
+LDLIBS=-L./ -lBootyServer
 
-all : libutils.dylib Client
+all : libBootyServer.dylib Client
 
-libutils.dylib : utils.h utils.cpp
-	g++ $(CPPFLAGS) $(LDFLAGS) -o libutils.dylib utils.cpp
+libBootyServer.dylib : BootyServer.h BootyServer.cpp
+	g++ $(CPPFLAGS) $(LDFLAGS) -o libBootyServer.dylib BootyServer.cpp
 
-Client : Client.cpp libutils.dylib
+Client : Client.cpp libBootyServer.dylib
 	g++ $(CPPFLAGS) $(LDLIBS) -o Client Client.cpp 
 
 clean : 
-	rm libutils.dylib
+	rm libBootyServer.dylib
 	rm Client
 
 run :
